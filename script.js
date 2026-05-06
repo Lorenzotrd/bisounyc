@@ -10,16 +10,23 @@ if (nav && !nav.classList.contains('solid')) {
 const navToggle = document.querySelector('.nav-toggle');
 const navLinks = document.getElementById('primary-nav');
 if (navToggle && navLinks) {
+  const backdrop = document.createElement('div');
+  backdrop.className = 'nav-backdrop';
+  document.body.appendChild(backdrop);
+
   const closeMenu = () => {
     navLinks.classList.remove('open');
+    backdrop.classList.remove('open');
     navToggle.setAttribute('aria-expanded', 'false');
     document.body.style.overflow = '';
   };
   navToggle.addEventListener('click', () => {
     const isOpen = navLinks.classList.toggle('open');
+    backdrop.classList.toggle('open', isOpen);
     navToggle.setAttribute('aria-expanded', String(isOpen));
     document.body.style.overflow = isOpen ? 'hidden' : '';
   });
+  backdrop.addEventListener('click', closeMenu);
   navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', closeMenu));
 }
 
