@@ -1231,6 +1231,8 @@ footer {
 
   .nav-toggle { display: flex; }
 
+  .marquee-track { animation-duration: 22s; }
+
   .nav-links {
     position: fixed;
     top: 0;
