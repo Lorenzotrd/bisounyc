@@ -1097,12 +1097,13 @@ footer {
 }
 
 .events-hero-image {
-  aspect-ratio: 21/9;
+  aspect-ratio: 16/10;
   background:
-    linear-gradient(rgba(228,44,35,0.1), rgba(228,44,35,0.1)),
-    url('images/private-events.webp') center/cover;
+    linear-gradient(rgba(228,44,35,0.05), rgba(228,44,35,0.05)),
+    url('images/private-events.webp') center top/cover;
   border-radius: 4px;
   margin-bottom: 5rem;
+  min-height: 360px;
 }
 
 .events-types {
