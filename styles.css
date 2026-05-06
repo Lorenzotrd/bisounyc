@@ -609,14 +609,6 @@ section.contact {
   color: var(--bisou-red);
 }
 
-.btn::after {
-  content: '→';
-  font-size: 1rem;
-  transition: transform 0.3s;
-}
-
-.btn:hover::after { transform: translateX(4px); }
-
 /* ============ RESERVATION ============ */
 .reservation {
   background: var(--bisou-red);
