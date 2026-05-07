@@ -262,6 +262,66 @@ nav.solid .nav-cta:hover {
   font-weight: 400;
 }
 
+/* ============ DARK PAGE THEME (menu + events) ============ */
+.dark-page { background: var(--midnight); color: var(--warm-ivory); }
+
+.dark-page nav.solid {
+  background: rgba(14, 14, 16, 0.85);
+  border-bottom: 1px solid rgba(243, 239, 230, 0.08);
+}
+.dark-page nav.solid .nav-links a { color: var(--warm-ivory); }
+.dark-page .nav-toggle span { background: var(--warm-ivory); }
+
+.dark-page .page-hero { background: var(--midnight); }
+.dark-page .page-hero .lead { color: rgba(243, 239, 230, 0.75); }
+
+.dark-page .menu-tab {
+  border-color: rgba(243, 239, 230, 0.25);
+  color: var(--warm-ivory);
+}
+.dark-page .menu-tab.active,
+.dark-page .menu-tab:hover {
+  background: var(--bisou-red);
+  border-color: var(--bisou-red);
+  color: var(--warm-ivory);
+}
+
+.dark-page .menu-item {
+  border-bottom-color: rgba(243, 239, 230, 0.12);
+}
+.dark-page .menu-item h4 { color: var(--warm-ivory); }
+.dark-page .menu-item .desc { color: rgba(243, 239, 230, 0.65); }
+
+.dark-page .wine-row {
+  border-bottom-color: rgba(243, 239, 230, 0.1);
+}
+.dark-page .wine-origin { color: rgba(243, 239, 230, 0.55); }
+.dark-page .wine-name { color: var(--warm-ivory); }
+
+.dark-page .menu-disclaimer,
+.dark-page .menu-legend {
+  color: rgba(243, 239, 230, 0.55);
+  border-top-color: rgba(243, 239, 230, 0.15);
+}
+
+.dark-page .event-type {
+  background: rgba(243, 239, 230, 0.04);
+  border: 1px solid rgba(243, 239, 230, 0.08);
+}
+.dark-page .event-type h3 { color: var(--warm-ivory); }
+.dark-page .event-type p { color: rgba(243, 239, 230, 0.7); }
+
+.dark-page .event-form input,
+.dark-page .event-form select,
+.dark-page .event-form textarea {
+  background: rgba(243, 239, 230, 0.06);
+  border-color: rgba(243, 239, 230, 0.18);
+  color: var(--warm-ivory);
+}
+.dark-page .event-form input::placeholder,
+.dark-page .event-form textarea::placeholder,
+.dark-page .event-form select { color: rgba(243, 239, 230, 0.45); }
+
 /* ============ SCROLL REVEAL ============ */
 .reveal-on-scroll {
   opacity: 0;
